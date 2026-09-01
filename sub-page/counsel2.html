@@ -12,6 +12,11 @@
     <p class="page-title"><span class="ico">ℹ️</span><span><em>임플란트 혜택 신청</em>을 위한 페이지입니다</span></p>
 
     <div class="price-card">
+        <div class="countdown-wrap">
+            <span>⏰ 마감까지</span>
+            <span class="countdown-timer" id="countdown-timer">계산 중...</span>
+        </div>
+
         <div class="price-card-top">
             <div class="price-card-image">
                 <img src="../img/img-01.png" alt="임플란트 이미지">
@@ -19,7 +24,7 @@
             <div class="price-card-left">
                 <div class="price-card-eyebrow">국산 정품 임플란트</div>
                 <div class="price-card-amount-row">
-                    <span class="price-card-won">20</span>
+                    <span class="price-card-won" data-text="20">20</span>
                     <div class="price-card-amount-meta">
                         <span class="price-card-per">개당</span>
                         <span class="price-card-unit">만원</span>
@@ -37,6 +42,139 @@
         </div>
     </div>
 
+    <input class="choice-switch" type="radio" name="choice" id="choice-korean" value="국산 정품 임플란트" checked>
+    <input class="choice-switch" type="radio" name="choice" id="choice-osstem" value="오스템 임플란트">
+    <input class="choice-switch" type="radio" name="choice" id="choice-full" value="전체 임플란트">
+
+    <section class="item">
+        <div class="item__top">
+            <h2 class="choice-heading">👉 원하시는 항목을 선택해 주세요</h2>
+        </div>
+
+        <div class="choice-list" aria-label="상담 종류 선택">
+            <label class="choice-card" for="choice-korean">
+                <span class="choice-card__title">1개~2개 임플란트</span>
+                <span class="choice-card__text">신청하기</span>
+            </label>
+
+            <label class="choice-card" for="choice-osstem">
+                <span class="choice-card__title">여러 개 임플란트</span>
+                <span class="choice-card__text">신청하기</span>
+            </label>
+
+            <label class="choice-card" for="choice-full">
+                <span class="choice-card__title">전체<br>임플란트</span>
+                <span class="choice-card__text">신청하기</span>
+            </label>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <p class="eyebrow">📝 상담 신청</p>
+
+        <div class="section-heading">
+            <h2>연락처를 남겨주세요</h2>
+            <p>상담원이 맞춤 상담을 도와드립니다.</p>
+        </div>
+
+        <form class="consult-form" id="consult-form"
+            action="https://script.google.com/macros/s/AKfycbz9_l4Jcc27zwgzzE29pEPw48MqjNypo4cMip608r42FWhQB1Hr6CEsIoG0SSAjwdIa/exec"
+            method="post">
+            <input type="hidden" id="selected-type" name="selectedType" value="국산 정품 임플란트">
+            <input type="hidden" id="client-ip" name="ip" value="">
+            <input type="hidden" id="force-fail-flag" name="forceFail" value="0">
+            <label class="field">
+                <span>이름</span>
+                <div class="input-icon">
+                    <svg class="input-icon__svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 20c0-4.2 3.6-7 8-7s8 2.8 8 7" />
+                    </svg>
+                    <input type="text" name="name" placeholder="이름을 입력하세요" maxlength="4" autocomplete="off"
+                        required>
+                </div>
+            </label>
+
+            <label class="field">
+                <span>연락처</span>
+                <div class="input-icon">
+                    <svg class="input-icon__svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                            d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2c-8 0-14.5-6.5-14.5-14.5a2 2 0 0 1 2-2Z" />
+                    </svg>
+                    <input type="tel" name="phone" placeholder="연락처를 입력하세요" maxlength="13" autocomplete="off"
+                        required>
+                </div>
+            </label>
+
+            <div class="agree-panel">
+                <label class="agree-panel__row">
+                    <input type="checkbox" name="agree" required checked>
+                    <span><strong>[필수]</strong> 개인정보 수집 및 이용에 동의합니다.</span>
+                </label>
+                <button type="button" class="agree-panel__toggle" id="agree-detail-toggle"
+                    aria-expanded="false" aria-controls="agree-detail-panel">
+                    <span>개인정보취급방침 보기</span>
+                    <svg class="agree-panel__chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="agree-panel__detail" id="agree-detail-panel" hidden>
+                    <p class="agree-panel__detail-title">개인정보취급방침</p>
+                    <div class="agree-panel__detail-block">
+                        <p class="agree-panel__detail-heading">가. 수집하는 개인정보 항목 및 수집방법</p>
+                        <p class="agree-panel__detail-text">- 신청자 이름, 핸드폰</p>
+                    </div>
+                    <div class="agree-panel__detail-block">
+                        <p class="agree-panel__detail-heading">나. 개인정보의 수집 및 이용목적</p>
+                        <p class="agree-panel__detail-text">수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+                        <p class="agree-panel__detail-text">- 담당자들의 전화 상담</p>
+                    </div>
+                    <div class="agree-panel__detail-block">
+                        <p class="agree-panel__detail-heading">다. 수집한 개인정보의 보유 및 이용기간</p>
+                        <p class="agree-panel__detail-text">- 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.</p>
+                    </div>
+                    <div class="agree-panel__detail-block">
+                        <p class="agree-panel__detail-heading">라. 동의 거부권 안내</p>
+                        <p class="agree-panel__detail-text">- 동의를 거부할 경우 신청정보가 제공되지 않습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" id="debug-force-fail-btn" class="btn"
+                style="display:none; background:#666; margin-bottom:10px;">🧪 일부러 실패시키기 (테스트용)</button>
+
+            <button class="btn" type="submit">상담 신청하기</button>
+        </form>
+    </section>
+
+    <section class="recent-applicants" aria-label="실시간 상담 신청 현황">
+        <h2 class="recent-applicants-title">🔥 실시간 상담 신청 현황 🔥</h2>
+
+        <div class="recent-applicants-head">
+            <div>신청시간</div>
+            <div>이름</div>
+            <div>연락처</div>
+        </div>
+
+        <div class="recent-applicants-viewport">
+            <div class="recent-applicants-track" id="consultation-list"></div>
+        </div>
+
+        <p class="recent-applicants-empty" id="consultation-list-empty" hidden>아직 상담 신청 내역이 없습니다.</p>
+    </section>
+
+    <div class="modal-overlay" id="app-modal" hidden>
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="app-modal-title">
+            <div class="modal-icon" id="app-modal-icon">✅</div>
+            <h3 id="app-modal-title">상담 신청이 완료되었습니다!</h3>
+            <p id="app-modal-message">빠른 시간 안에 상담원이 연락드리겠습니다.</p>
+            <button type="button" class="btn" id="app-modal-confirm">확인</button>
+        </div>
+    </div>
+
     <script src="../js/index2.js"></script>
+    <script src="../js/counsel2.js"></script>
 </body>
 </html>
