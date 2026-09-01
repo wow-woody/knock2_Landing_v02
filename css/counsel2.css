@@ -448,7 +448,7 @@ body {
     width: 100%;
     min-height: 54px;
     padding: 0 16px;
-    border: 2px solid rgba(15, 27, 45, 0.15);
+    border: 3px solid rgba(15, 27, 45, 0.15);
     border-radius: 16px;
     background: var(--card);
     color: var(--dark-ink);
