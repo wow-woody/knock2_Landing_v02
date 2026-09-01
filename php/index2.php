@@ -279,7 +279,7 @@
 
         .price-card-image {
             flex: 0 0 auto;
-            width: clamp(62px, 16vw, 116px);
+            width: clamp(80px, 28%, 132px);
             aspect-ratio: 2.48/3.5;
             background: rgba(255, 255, 255, 0.06);
             border: 1.5px solid rgba(232, 193, 112, 0.3);
@@ -287,7 +287,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 10px;
+            padding: 16px;
             overflow: hidden;
         }
 
@@ -552,14 +552,14 @@
         }
 
         .choice-card__title {
-            font-size: 1.05rem;
+            font-size: 1.3rem;
             font-weight: 800;
             color: var(--dark-ink);
         }
 
         .choice-card__text {
             color: #6b7280;
-            font-size: 1.05rem;
+            font-size: 1.3rem;
         }
 
         .section-heading {
@@ -602,6 +602,7 @@
             border-radius: 16px;
             background: var(--card);
             color: var(--dark-ink);
+            font-size: 16px;
             outline: none;
             transition:
                 border-color 0.2s ease,
@@ -1044,6 +1045,12 @@
             .recent-applicants-head,
             .recent-applicants-row {
                 font-size: 0.74rem;
+            }
+
+            .page-title {
+                gap: 5px;
+                padding: 10px 10px;
+                font-size: 16px;
             }
         }
     </style>
