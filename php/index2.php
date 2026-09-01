@@ -1061,7 +1061,7 @@
     <div id="view-index2" class="view">
         <div class="container">
             <div class="main_img">
-                <p><img src="../img/ko_im_20.gif" alt="오스템 메인이미지"></p>
+                <p><img src="https://knockknockplant.co.kr/landing/00-test/landing_v02/ko_im_20.gif" alt="오스템 메인이미지"></p>
                 <a href="#counsel2" id="go-counsel2-btn" class="btn">
                     <p>무료 상담 신청</p>
                 </a>
@@ -1081,7 +1081,7 @@
 
             <div class="price-card-top">
                 <div class="price-card-image">
-                    <img src="../img/img-01.png" alt="임플란트 이미지">
+                    <img src="https://knockknockplant.co.kr/landing/00-test/landing_v02/img-01.png" alt="임플란트 이미지">
                 </div>
                 <div class="price-card-left">
                     <div class="price-card-eyebrow">국산 정품 임플란트</div>
