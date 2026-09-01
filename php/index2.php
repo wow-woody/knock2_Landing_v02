@@ -1023,6 +1023,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .choice-card__break {
+                display: none;
+            }
+
             .section-heading {
                 text-align: center;
             }
@@ -1121,7 +1125,7 @@
                 </label>
 
                 <label class="choice-card" for="choice-full">
-                    <span class="choice-card__title">전체<br>임플란트</span>
+                    <span class="choice-card__title">전체 <br class="choice-card__break">임플란트</span>
                     <span class="choice-card__text">신청하기</span>
                 </label>
             </div>

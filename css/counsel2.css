@@ -874,6 +874,10 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .choice-card__break {
+        display: none;
+    }
+
     .section-heading {
         text-align: center;
     }
