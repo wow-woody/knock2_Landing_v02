@@ -99,8 +99,22 @@ function formatPhoneForSheet(rawPhone) {
         return '';
     }
 
-    const isSeoul = digits.startsWith('02');
-    const prefixLength = isSeoul ? 2 : 3;
+    // 서울(02)은 국번이 3자리(총 9자리, 02-XXX-XXXX)인 경우와 4자리(총 10자리, 02-XXXX-XXXX)인 경우가 둘 다 있다
+    if (digits.startsWith('02')) {
+        const middleLength = digits.length >= 10 ? 4 : 3;
+
+        if (digits.length <= 2) {
+            return digits;
+        }
+
+        if (digits.length <= 2 + middleLength) {
+            return '02-' + digits.slice(2);
+        }
+
+        return '02-' + digits.slice(2, 2 + middleLength) + '-' + digits.slice(2 + middleLength);
+    }
+
+    const prefixLength = 3;
 
     if (digits.length <= prefixLength) {
         return digits;
