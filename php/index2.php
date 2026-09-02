@@ -1147,7 +1147,7 @@
             </div>
 
             <form class="consult-form" id="consult-form"
-                action="https://script.google.com/macros/s/AKfycbyLhq0I1mohP0_xWdLFIKOjawPJ1IUP5dCWtBwxeWDb9T0WwOoIe3K3jj5hwhqTsXll/exec"
+                action="https://script.google.com/macros/s/AKfycbzhy4gGtOfiBXCj9v8zA2Ih7-COfqvQxnINzOwpX48zn_XQVZ-1PI7u95Bu11G8S1-5Yg/exec"
                 method="post">
                 <input type="hidden" id="selected-type" name="selectedType" value="1개~2개 임플란트">
                 <input type="hidden" id="client-ip" name="ip" value="">
